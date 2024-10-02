@@ -3,12 +3,18 @@
     padding: 0
 }
 
-
+body{
+    text-align: center;
+}
+h1{
+    padding: 30px;
+}
 
 #git{
     padding-left: 20px;
 }
 #git ul{
+    text-align: left;
     list-style: none;
     padding: 10px;
 
@@ -20,6 +26,12 @@
     border: 1px solid gray;
     margin-top: 10px;
     cursor:pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#git >ul li ul li {
+    font-weight: 300;
 }
 
 #git ul li ul {
