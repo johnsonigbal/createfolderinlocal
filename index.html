@@ -10,22 +10,97 @@
 
     <section id="git">
         <ul >
-            <li>mkdir </li>
-            <li>touch </li>
-            <li>edit file</li>
-            <li>git init</li>
-            <li>git add .</li>
-            <li>git commit -m "message"</li>
-            <li>git push origin main</li>
-            <li>error came -not match branch name (master==main)</li>
-            <li>git branch -M main</li>
-            <li>git push origin main</li>
-            <li>error came -origin not in git repository </li>
-            <li>file create in github web</li>
-            <li>git remote add origin https://github.com/johnsonigbal/createfolderinlocal.git</li>
-            <li>git push origin main</li>
-            <li>file successfully add in github</li>
+            <li>Git Flow Chart
+                <ul><li>working repository</li>
+                    <li>staging area </li>
+                    <li>local git repository</li>
+                    <li>development branch</li>
+                </ul>
+            </li>
+
+            <li>cmd for folder & file create
+                <ul>  <li>mkdir folder name -folder create </li>
+                    <li>cd current directory -move next dir
+                    </li>
+                    <li>touch file name  -file create</li>
+                    <li>ls - list of file show</li>
+                     <li>cd .. back to repsotry</li>
+                </ul>
+            </li>
+            
+           <li>basic config cmd<ul>
+            <li>git config --global user.name ""</li>
+            <li>git config --global user.email ""</li>
+            <li>git config --global core.editor "code --wait" vs code editor add git
+            </li>
+            <li>git config --global -e open vs code </li>
+            <li>git alias.sh status  ---shortcut for cmd</li>
+        
+        </ul></li>
+            <li>Local To Remote (git folder createf anf update github )
+                <ul>
+                    <li>git -v</li>
+                    <li>git init foldername or cd foldername then git init
+                </li>
+                <li>edit file</li>
+                <li>git add .</li>
+                <li>git commit -m "message"</li>
+                <li>git push origin main</li>
+                <li>error came -not match branch name (master==main)</li>
+                <li>git branch -M main</li>
+                <li>git push origin main</li>
+                <li>error came -origin not in git repository </li>
+                <li>file create in github web</li>
+                <li>git remote add origin https://github.com/johnsonigbal/createfolderinlocal.git</li>
+                <li>git push origin main</li>
+                <li>file successfully add in github</li>
+            </ul>
+
+            </li>
+
+            <li>Remote To Local <ul><li>git clone "http url from github folder"</li></ul></li>
+            
+            <li>
+               git -checking cmd
+                <ul>
+                    <li>
+                        git log --commit history 
+                    </li>
+                    <li>git status -- file flow of record</li>
+                    <li>git branch --list of branch show</li>
+                    <li>git branch -a  --list branch local and remote</li>
+                    <li>git log --oneline  --list commit in shortform</li>
+                    <li>git log --oneline filename   ---specific file list of changing commit</li>
+                    <li>git log commitfrom committo  ---specific time period list of changing commit </li>
+                    <li>git log stat --statisc each file change </li>
+                </ul>
+            </li>
      
+            <li>movement of file
+                <ul>
+                    <li>git add .  ---work to stage</li>
+                    <li>git commit -m "msg" ----stage to git local</li>
+                    <li>git push origin branchname  ----git local to remote</li>
+                    <li>git reset HEAD ----staging to work </li>
+                    <li>git reset HEAD --hard   -----git_local to work (last commit file change project file)
+                    </li>
+                    <li>git reset HEAD~1   ---delete last commit and file move unstage
+                    </li>
+                    <li>git clean -fd  ---"remove untrack file and folder"</li>
+                     </ul>
+            </li>
+
+            <li>Commit Cmd <ul>
+                <li>git commit --amend   --previews commit add new stage file change
+                </li>
+               
+                <li>
+                    git revert commitname  -- renew commit and create new commit 
+                </li>
+                <li>git tag -a version name -m "message "</li>
+           
+            </ul></li>
+
             <li>how create New branch
                 <ul> <li>git branch subbranch  --in your local device </li></ul>
             </li>

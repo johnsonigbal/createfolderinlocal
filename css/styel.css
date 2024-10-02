@@ -24,5 +24,8 @@
 
 #git ul li ul {
     display: none;
+}
 
+li{
+    word-break: break-word;
 }
